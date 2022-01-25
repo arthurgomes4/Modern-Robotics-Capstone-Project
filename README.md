@@ -1,7 +1,7 @@
 # Modern-Robotics-Capstone-Project
 
 ## Introduction
-The capstone project of the [Modern Robotics: Mechanics, Planning, and Control Specialization](https://www.coursera.org/specializations/modernrobotics) involves several concepts from robotics put together to form a kinematic simulator for a mobile manipulator.
+The capstone project of the [Modern Robotics: Mechanics, Planning, and Control Specialization](https://www.coursera.org/specializations/modernrobotics) involves several concepts from robotics put together to create a kinematic simulation of a mobile manipulator.
 
 The robot to be kinematically simulated is the [Kuka YouBot](https://cyberbotics.com/doc/guide/youbot). 
 <p align="center">
