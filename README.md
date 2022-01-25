@@ -5,7 +5,7 @@ The capstone project of the [Modern Robotics: Mechanics, Planning, and Control S
 
 The robot to be kinematically simulated is the [Kuka YouBot](https://cyberbotics.com/doc/guide/youbot). 
 <p align="center">
-  <img src="./README_images/youBot.png" width="300" title="bot">
+  <img src="./README_images/youBot.png" width="500" title="bot">
 </p>
 <p align="center">
     Fig: Kuka YouBot
@@ -14,7 +14,7 @@ The robot to be kinematically simulated is the [Kuka YouBot](https://cyberbotics
 This Robot has to perform a pick place operation where in the object to be moved is a cube of side 50mm. The entire operation has to be kinematically simulated by the program and a final CSV file of the timestamped robot states has to be generated for visualization in [CoppeliaSim](https://www.coppeliarobotics.com/). The scene for visualization can be found [here](./coppeliaSim).
 
 <p align="center">
-  <img src="./README_images/youBot_sim.png" width="400" title="bot">
+  <img src="./README_images/youBot_sim.png" width="500" title="bot">
 </p>
 <p align="center">
     Fig: Kuka YouBot Visualised in coppeliaSim
@@ -51,7 +51,7 @@ The end-effector trajectory is a series of transforms in the world/space frame t
 
 There are two methods of producing the required trajectory.
 <p align="center">
-  <img src="./README_images/trajectories.png" width="300" title="bot">
+  <img src="./README_images/trajectories.png" width="500" title="bot">
 </p>
 <p align="center">
     Fig: Screw and cartesian trajectories
@@ -74,7 +74,7 @@ The motion of end-effector is a separate into a simultaneous rotation and straig
 ### Cubic Scaling
 The trajectory's progression through time is represented by a cubic polynomial.
 <p align="center">
-  <img src="./README_images/cts.png" width="300" title="bot">
+  <img src="./README_images/cts.png" width="500" title="bot">
 </p>
 <p align="center">
     s = 0 at start. s = 1 at end. T = total time of motion
@@ -83,7 +83,7 @@ The trajectory's progression through time is represented by a cubic polynomial.
 ### Quintic Scaling
 The trajectory's progression through time is represented by a quintic polynomial.
 <p align="center">
-  <img src="./README_images/qts.png" width="300" title="bot">
+  <img src="./README_images/qts.png" width="500" title="bot">
 </p>
 <p align="center">
     s = 0 at start. s = 1 at end. T = total time of motion
@@ -99,7 +99,7 @@ The purpose of this milestone is to write code to calculate the velocity vector 
 
 This controller will use the control law:
 <p align="center">
-  <img src="./README_images/ctrl.png" width="500" title="bot">
+  <img src="./README_images/ctrl.png" width="600" title="bot">
 </p>
 <p align="center">
     Fig: feedforward + PI control
@@ -110,7 +110,7 @@ This equation will out the required end-effector twist that will take the end-ef
 The twist has to be converted to the velocity vector by using a Jacobian pseudo inverse. This calculation is given by the equation:
 
 <p align="center">
-  <img src="./README_images/jac.png" width="150" title="bot">
+  <img src="./README_images/jac.png" width="250" title="bot">
 </p>
 <p align="center">
     Fig: Calculate wheel and joint speeds.
@@ -122,7 +122,7 @@ This is implemented in the program ```end_eff_twist_to_joint_wheel_velocities.m`
 The various described components will be combined to form the final program. The overall flow of the program is described in the chart given below.
 
 <p align="center">
-  <img src="./README_images/MR6.png" width="600" title="bot">
+  <img src="./README_images/MR6.png" width="800" title="bot">
 </p>
 <p align="center">
     Fig: Program flow
@@ -131,5 +131,5 @@ The various described components will be combined to form the final program. The
 ## Final Output
 
 <p align="center">
-  <img src="./README_images/final.gif" width="600" title="bot">
+  <img src="./README_images/final.gif" width="800" title="bot">
 </p>
