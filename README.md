@@ -67,9 +67,15 @@ And two methods of time scaling the trajectory.
 
 ### Screw Trajectory
 The motion of the end-effector through space is a continous screw motion from  start to finish.
+<p align="center">
+  <img src="./README_images/screw.gif" width="500" title="bot">
+</p>
 
 ### Cartesian Trajectory
 The motion of end-effector is a separate into a simultaneous rotation and straight line translation.
+<p align="center">
+  <img src="./README_images/cart.gif" width="500" title="bot">
+</p>
 
 ### Cubic Scaling
 The trajectory's progression through time is represented by a cubic polynomial.
@@ -105,7 +111,7 @@ This controller will use the control law:
     Fig: feedforward + PI control
 </p>
 
-This equation will out the required end-effector twist that will take the end-effector to the desired position in the given time interval. It is implemented in the program ```FeedbackControl.m```.
+This equation will output the required end-effector twist that will take the end-effector to the desired position in the given time interval. It is implemented in the program ```FeedbackControl.m```.
 
 The twist has to be converted to the velocity vector by using a Jacobian pseudo inverse. This calculation is given by the equation:
 
